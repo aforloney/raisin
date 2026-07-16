@@ -1,25 +1,21 @@
 # Terminology
 
-## Grape
-
-A raw idea, request, or problem statement.
-
-## Maturity
-
-The degree to which a decision has been refined through reasoning.
-
-## Raisin
-
-A mature decision artifact ready for implementation.
-
 ## Assumption
 
-A belief that influences a decision but lacks validation.
+A belief the proposed approach depends on but that has not yet been supported by evidence.
 
 ## Fact
 
-A confirmed piece of information.
+Information supported by a repository artifact, existing documentation, test or configuration, small experiment, or explicit domain-owner input.
 
-## Convergence
+## Material assumption
 
-The process of reducing uncertainty until decision confidence reaches an acceptable threshold.
+An assumption that, if false, could change the chosen approach, scope, major constraint, or implementation sequence.
+
+## Accepted risk
+
+A material uncertainty that the decision owner has intentionally chosen to carry into implementation, along with its owner and validation plan.
+
+## Significant re-plan
+
+A change after coding begins to the chosen approach or scope, caused by a previously missed dependency, constraint, incorrect assumption, or overlooked risk.

@@ -1,14 +1,7 @@
-# Raisin Vision
+# Raisin v0.1 vision
 
-Software teams frequently fail not because implementation is difficult, but because immature decisions enter implementation too early.
+Engineering plans often look complete while depending on untested assumptions. When one proves false, the team discovers it after coding starts, when changing course is expensive.
 
-Raisin exists to help humans and AI agents mature ideas into validated decisions.
+Raisin helps an engineer make those assumptions visible, gather only the evidence needed to manage decision risk, and communicate what uncertainty remains.
 
-Raisin is not a replacement for engineering judgment.
-
-Raisin provides a structured process for:
-- reducing uncertainty
-- exposing assumptions
-- evaluating tradeoffs
-- validating decisions
-- producing durable artifacts
+Raisin does not replace engineering judgment. It makes the basis for that judgment inspectable.

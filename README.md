@@ -1,36 +1,26 @@
 # Raisin 🍇
 
-Raisin is a reasoning framework for transforming raw ideas into mature, validated engineering artifacts.
+Raisin is a lightweight planning loop for engineers designing a technical change whose solution is not yet obvious.
 
-Modern AI systems are excellent at generating solutions, but often struggle with knowing when enough context exists to make a trustworthy decision.
+It helps an engineer using Codex, Cursor, or Claude expose assumptions that could change the approach before implementation starts.
 
-Raisin introduces a structured maturity process:
+Raisin v0.1 is deliberately small:
 
-Raw idea → Discovery → Validation → Decision → Implementation-ready artifact
+1. Frame the decision and constraints.
+2. Make assumptions visible.
+3. Validate the assumptions that could materially change the approach.
+4. Record the decision, remaining risks, and an executable plan.
 
-The goal is not faster answers.
+A plan is ready when remaining uncertainty is visible, bounded, and intentionally accepted—not when all uncertainty has been eliminated.
 
-The goal is decisions mature enough to trust.
+## Run a pilot
 
-## Concepts
+1. Copy [the technical-change brief](templates/technical-change-brief.md) for one upcoming architecture change, migration, refactor, or system modification.
+2. Start an AI planning session with [the Raisin session prompt](templates/raisin-session-prompt.md), providing the brief and relevant repository context.
+3. Follow [the pilot guide](docs/first-pilot.md) to record the outcome after implementation begins.
 
-### Raisin
-The overall framework and philosophy.
+The primary pilot measure is whether the change requires a significant re-plan after coding starts. Raisin is useful if it moves those discoveries into planning.
 
-### REOS
-The Reasoning Execution & Orchestration Specification.
+## Scope
 
-REOS defines the contracts, lifecycle, state model, quality gates, and telemetry required for a compliant reasoning workflow.
-
-### Adapters
-Integrations that bring Raisin workflows into existing AI development environments.
-
-Examples:
-- Cursor
-- Claude
-- Codex
-- ChatGPT
-
-## Status
-
-Raisin is currently in early design exploration.
+v0.1 is an interaction pattern and two small templates. It does not define a reasoning standard, compliance model, integration protocol, maturity score, or generalized reasoning graph.
