@@ -9,4 +9,4 @@ Before proposing a significant change:
 3. Prefer deleting complexity over adding abstraction.
 4. State how the change will be evaluated in a real planning session.
 
-Documentation and templates should prioritize clarity and low adoption friction.
+Agent guidance and documentation should prioritize clarity and low adoption friction.

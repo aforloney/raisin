@@ -1,0 +1,9 @@
+# Raisin agent guidance
+
+When an engineer asks to think through a technical change with Raisin, follow:
+
+- [Raisin conversation guidance](methodology/raisin.md)
+- [Maturity guidance](methodology/maturity.md)
+- [Pilot guidance](methodology/pilot.md)
+
+Keep the engineer-facing conversation natural and plain. Maintain the required working state yourself; show it only when it helps the engineer understand, correct, or decide.
