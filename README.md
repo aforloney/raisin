@@ -1,26 +1,29 @@
 # Raisin 🍇
 
-Raisin is a lightweight planning loop for engineers designing a technical change whose solution is not yet obvious.
+Raisin helps engineers think through a technical change until it is solid enough to build.
 
-It helps an engineer using Codex, Cursor, or Claude expose assumptions that could change the approach before implementation starts.
+It is a conversational methodology for an engineer and an AI assistant. The engineer brings the context and corrects the AI's understanding. The AI asks useful questions, makes its observations visible, and decides when the thinking is mature enough to turn into an engineering plan.
 
-Raisin v0.1 is deliberately small:
+Raisin is for changes whose solution is not yet obvious, including architecture changes, migrations, refactors, dependency changes, and system modifications.
 
-1. Frame the decision and constraints.
-2. Make assumptions visible.
-3. Validate the assumptions that could materially change the approach.
-4. Record the decision, remaining risks, and an executable plan.
+## How it works
 
-A plan is ready when remaining uncertainty is visible, bounded, and intentionally accepted—not when all uncertainty has been eliminated.
+The conversation starts with a shared understanding of the change, its outcome, its constraints, and what is still unclear. The AI then helps uncover what must be true for the approach to work, investigates the uncertainty most likely to change the plan, and reassesses after every meaningful answer.
 
-## Run a pilot
+When the AI determines that no remaining question is likely to materially change the engineering plan, it recommends a **Raisin**: the idea is ready to move from planning into implementation. It explains why, presents the engineering plan, and asks the engineer to confirm that transition.
 
-1. Copy [the technical-change brief](templates/technical-change-brief.md) for one upcoming architecture change, migration, refactor, or system modification.
-2. Start an AI planning session with [the Raisin session prompt](templates/raisin-session-prompt.md), providing the brief and relevant repository context.
-3. Follow [the pilot guide](docs/first-pilot.md) to record the outcome after implementation begins.
+Raisin does not require certainty. It requires that uncertainty which could still matter is visible, understood, and intentionally accepted.
 
-The primary pilot measure is whether the change requires a significant re-plan after coding starts. Raisin is useful if it moves those discoveries into planning.
+## Use Raisin
+
+Ask an AI assistant to help think through a technical change with Raisin. The agent guidance in this repository tells supported workflows how to run the conversation and assess maturity:
+
+- [Raisin conversation guidance](methodology/raisin.md)
+- [Maturity guidance](methodology/maturity.md)
+- [Pilot guidance](methodology/pilot.md)
+
+The primary pilot measure is whether implementation requires a significant re-plan after coding begins. Raisin is useful if it moves those discoveries into planning.
 
 ## Scope
 
-v0.1 is an interaction pattern and two small templates. It does not define a reasoning standard, compliance model, integration protocol, maturity score, or generalized reasoning graph.
+v0.1 defines agent behavior and lightweight session records. It does not define a compliance model, autonomous execution system, universal reasoning standard, or telemetry infrastructure.
