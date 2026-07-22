@@ -6,6 +6,6 @@ All notable changes to Raisin will be documented here.
 
 ### Added
 
-- Initial Raisin project structure
-- Initial REOS specification boundaries
-- Initial maturity model concept
+- Conversational Raisin guidance for AI-assisted technical-change planning
+- Agent maturity guidance and lightweight pilot records
+- Entry guidance for Codex, Cursor, and Claude workflows
