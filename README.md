@@ -1,10 +1,55 @@
 # Raisin 🍇
 
-Raisin helps engineers think through a technical change until it is solid enough to build.
+Turn grape ideas into Raisins.
 
-It is a conversational methodology for an engineer and an AI assistant. The engineer brings the context and corrects the AI's understanding. The AI asks useful questions, makes its observations visible, and decides when the thinking is mature enough to turn into an engineering plan.
+Raisin is a conversational methodology that helps engineers and AI reduce uncertainty before implementation through shared understanding, deliberate questioning, and evidence-driven reasoning.
 
-Raisin is for changes whose solution is not yet obvious, including architecture changes, migrations, refactors, dependency changes, and system modifications.
+The goal isn't more process.
+
+The goal is helping engineering ideas reach a Raisin.
+
+## Why?
+
+Most implementation problems aren't caused by writing bad code.
+
+They're caused by discovering important assumptions after coding has already started.
+
+Raisin moves those discoveries earlier.
+
+## What makes Raisin different?
+
+Raisin isn't another planning template.
+
+Instead, it changes the conversation.
+
+Rather than jumping directly to solutions, Raisin helps engineers and AI:
+
+- establish shared understanding
+- uncover hidden assumptions
+- validate the highest-risk uncertainty
+- know when enough is known to start building
+
+## Philosophy
+
+Raisin is built around one belief:
+
+> Engineering improves when uncertainty is reduced before implementation—not when documentation increases.
+
+## When should I use Raisin?
+
+Use Raisin when:
+
+- architectural decisions
+- migrations
+- refactors
+- technical planning
+- system design
+
+Skip Raisin when:
+
+- you need syntax
+- the solution is already obvious
+- the decision has already been made
 
 ## How it works
 
