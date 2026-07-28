@@ -207,3 +207,13 @@ Raisin is a conversational methodology for helping engineers and AI reach better
 > Every engineering idea starts as a grape.
 >
 > Raisin helps it become ready to build.
+
+---
+
+## Implementation
+
+Raisin defines the interaction contract and observable behaviors of the methodology.
+
+Individual runtimes are responsible for preserving these behaviors while adapting to the capabilities of their environment.
+
+Different implementations may vary internally while remaining faithful to the Raisin methodology.
