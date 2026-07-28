@@ -1,128 +1,199 @@
 # Raisin
 
-Raisin is a conversational methodology for engineering planning.
+> A conversational methodology for engineering decisions.
 
-Its purpose is to reduce hidden implementation risk by helping engineers and AI reach a shared understanding before implementation begins.
+## Purpose
 
-The goal of Raisin is not to generate more documentation.
+Every engineering idea starts as a grape.
 
-The goal is to improve engineering decisions.
+It has potential, but it also contains uncertainty.
 
----
+Raisin helps engineers and AI work together to reduce that uncertainty until the idea is concentrated enough to build with confidence.
 
-## Interaction Contract
+Raisin is not a planning template.
 
-Raisin begins only when explicitly invoked.
+It is a way of reasoning together before implementation begins.
 
-Example:
+The goal is not to eliminate uncertainty.
 
-Use Raisin to plan this migration.
-
----
-
-## Working Pattern
-
-1. Establish shared understanding.
-2. Confirm the problem.
-3. Discover what must be true.
-4. Identify assumptions.
-5. Prioritize the assumption most likely to change the approach.
-6. Recommend low-cost validation.
-7. Repeat until further reasoning is unlikely to materially change the engineering decision.
-8. Produce an implementation-ready plan.
+The goal is to understand it well enough to make a responsible engineering decision.
 
 ---
 
-## Guiding Principles
+# Interaction Contract
 
-Engineers naturally think and communicate in narratives, not templates.
+Raisin is an explicit mode of collaboration.
 
-Raisin should never require an engineer to translate their thoughts into a predefined structure before meaningful reasoning can begin.
+It begins only when the engineer invokes it.
 
-Instead:
+Examples:
 
-- Engineers describe problems naturally.
-- Raisin extracts structure.
-- Raisin maintains the planning state.
-- Raisin asks the next highest-value question.
-- Raisin produces structured artifacts only as outputs.
-- Templates are implementation artifacts—not user interfaces..
+* "Use Raisin to plan this migration."
+* "Let's Raisin this design."
+* "Use Raisin for this architecture decision."
 
-## Conversation
+Outside of explicit invocation, normal conversation continues.
 
-Raisin helps an engineer and an AI assistant work an uncertain technical idea until it is ready to build. The engineer supplies context and corrects the AI. The AI guides the reasoning without pretending to replace engineering judgment.
+---
 
-### Start with shared understanding
-Briefly state your understanding of:
+# Principles
 
-- the technical decision;
-- the intended outcome;
-- known constraints; and
-- what is immediately unclear.
+## Shared understanding before solutions
 
-Ask the engineer to correct the framing before exploring the idea. Do not produce a polished analysis of the wrong problem.
+Before exploring solutions, establish a shared understanding of:
 
-### Let the engineer explain first
-Ask, in plain language, what must be true for the approach to work. Listen before introducing your own assumptions or directions.
+* the technical decision;
+* the intended outcome;
+* known constraints; and
+* what is currently uncertain.
 
-Then reflect the reasoning back. Make your observations visible, particularly when they reveal an assumption you may be making. The engineer must have a clear opportunity to correct you.
+The engineer should have an opportunity to correct this understanding before reasoning continues.
 
-### Follow the uncertainty that matters most
-Identify the unresolved assumption most likely to change the engineering plan if it proves false. Explore that assumption first.
+Never optimize a misunderstood problem.
 
-For a selected assumption, suggest a small number of low-cost, credible ways to learn more from the available context. These may include repository inspection, existing documentation, tests or configuration, a small experiment, or input from the responsible domain owner. The engineer chooses, rejects, or adjusts the path.
+---
 
-After each meaningful answer, reassess the whole picture. Do not work through a checklist in a fixed order. Ask another question only if answering it is likely to materially change the engineering decision.
+## Elicit before you infer
 
-### Keep the conversation collaborative
-Use focused questions and brief reflections. Offer observations and possible directions when they help, but label them as observations rather than facts. Do not interrogate the engineer or overwhelm them with framework language.
+The engineer explains their thinking first.
 
-Keep track of the current understanding, facts, assumptions, decisions, unknowns, evidence, and remaining uncertainty as described in maturity guidance. This working state belongs to the agent unless showing part of it will help the engineer.
+Raisin listens, reflects, organizes, and identifies gaps before introducing new assumptions or recommendations.
 
-### Reach a Raisin
-Recommend a Raisin when the maturity guidance supports moving from planning into implementation.
+The purpose is to understand the engineer's reasoning—not replace it.
 
-At that point:
+---
 
-- Say that you recommend concluding Raisin.
-- Explain why the idea is ready in plain language, including uncertainty that remains.
-- Present the engineering plan.
-- Ask the engineer to confirm the transition from planning to implementation.
-- If a decision-changing uncertainty remains unresolved and cannot be intentionally accepted, explain why Raisin should continue instead of presenting a final plan.
+## Follow the highest-leverage uncertainty
 
-## Maturity
-Maturity is the agent's ongoing judgment of whether the current understanding is sufficient to move from planning into implementation. It is not a claim that all uncertainty has been eliminated.
+Not every assumption deserves equal attention.
 
-### Working state
-Throughout a Raisin conversation, retain:
+At each step, identify the unresolved uncertainty most likely to change the engineering decision if it proves false.
 
-- the technical decision, intended outcome, and constraints;
-- facts and the evidence supporting them;
-- assumptions and unknowns;
-- decisions and why they were made;
-- remaining uncertainty, including anything intentionally accepted; and
-- the current maturity assessment and the reasons for it.
+Explore that uncertainty before moving to lower-impact questions.
 
-Use this state to guide the next question. Do not require the engineer to maintain it or present it as a form. Surface only the parts that help the engineer understand, correct, or decide.
+Raisin optimizes for information gain rather than checklist completion.
 
-### Assess after each meaningful answer
-Update the internal maturity score and its explanation after the conversation changes the understanding of the idea.
+---
 
-Ask yourself:
+## Prefer the lowest-cost credible evidence
 
-1. Would answering another question likely change the engineering plan?
-2. Does an unresolved assumption still have enough impact to change the approach, scope, or major constraint?
-3. Is the remaining uncertainty about the decision itself, or only about details that can safely be handled during implementation?
+When uncertainty matters, propose practical ways to learn more.
 
-The score is a feedback mechanism for the agent and for later pilot learning. It is not sufficient on its own: its explanation must be grounded in the working state.
+Examples include:
 
-### Recommend readiness
-Recommend a Raisin when:
+* repository inspection;
+* existing documentation;
+* tests or configuration;
+* a small experiment;
+* or consultation with an appropriate domain expert.
 
-- the intended outcome, main approach, and constraints are understood;
-- decision-changing assumptions have been investigated, or their risk is visible and intentionally accepted;
-- remaining uncertainty is bounded and understood; and
-- another question is unlikely to materially change the engineering plan.
+The engineer chooses how to proceed.
 
-If the answer to the final point is no because the agent lacks context, do not treat the absence of questions as readiness. State what is missing and continue with the question most likely to resolve it.
+---
 
+## Managed uncertainty
+
+Perfect certainty is not required.
+
+Implementation may begin when remaining uncertainty is:
+
+* visible;
+* understood;
+* intentionally accepted; and
+* unlikely to materially change the engineering approach.
+
+---
+
+## Convergence before completeness
+
+The purpose of Raisin is not to answer every possible question.
+
+The purpose is to answer enough of the right questions that implementation can begin responsibly.
+
+Before asking another question, consider whether its answer is likely to materially change the engineering decision.
+
+If not, recommend convergence.
+
+---
+
+# Conversation Pattern
+
+A typical Raisin session follows this rhythm:
+
+```
+Engineer invokes Raisin
+        ↓
+Shared understanding
+        ↓
+Engineer confirms or corrects
+        ↓
+Engineer explains reasoning
+        ↓
+Material assumptions emerge
+        ↓
+Highest-leverage uncertainty explored
+        ↓
+Evidence gathered where valuable
+        ↓
+Decision converges
+        ↓
+Implementation-ready plan
+```
+
+The conversation is adaptive.
+
+The next question is determined by the current understanding—not by a predefined sequence.
+
+---
+
+# Reaching a Raisin
+
+A conversation has reached a Raisin when:
+
+* the technical decision is understood;
+* the intended outcome is clear;
+* important assumptions have been examined;
+* remaining uncertainty is visible and acceptable; and
+* further discussion is unlikely to materially improve the engineering decision.
+
+At this point, Raisin recommends concluding planning and moving into implementation.
+
+A Raisin is not perfect certainty.
+
+A Raisin is a plan that is mature enough to build responsibly.
+
+---
+
+# Invariants
+
+Every implementation of Raisin should preserve these behaviors:
+
+* Engineers communicate naturally rather than filling out templates.
+* The methodology adapts to the conversation instead of following rigid checklists.
+* The AI supports engineering judgment rather than replacing it.
+* Assumptions become visible before commitments are made.
+* Recommendations explain tradeoffs and remaining uncertainty.
+* The methodology knows when to stop reasoning and start building.
+
+How an implementation preserves these behaviors is intentionally left to the implementation itself.
+
+---
+
+# What Raisin Is Not
+
+Raisin is not:
+
+* a project management process;
+* an RFC template;
+* an ADR replacement;
+* a documentation standard;
+* a maturity model; or
+* an autonomous decision maker.
+
+Raisin is a conversational methodology for helping engineers and AI reach better engineering decisions together.
+
+---
+
+> Every engineering idea starts as a grape.
+>
+> Raisin helps it become ready to build.
