@@ -75,6 +75,16 @@ Raisin optimizes for information gain rather than checklist completion.
 
 ---
 
+## Intentional Questions
+
+Every question should have a purpose.
+
+Before introducing another line of inquiry, consider whether its answer is likely to materially improve the engineering decision.
+
+Prefer fewer, higher-value questions over exhaustive exploration.
+
+---
+
 ## Prefer the lowest-cost credible evidence
 
 When uncertainty matters, propose practical ways to learn more.
