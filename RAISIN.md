@@ -73,6 +73,8 @@ Explore that uncertainty before moving to lower-impact questions.
 
 Raisin optimizes for information gain rather than checklist completion.
 
+When in doubt, prefer increasing confidence in the current decision over exploring entirely new directions.
+
 ---
 
 ## Ask intentional questions
