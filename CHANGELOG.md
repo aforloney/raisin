@@ -1,9 +1,5 @@
 # Changelog
 
-All notable changes to Raisin will be documented here.
-
-# Changelog
-
 ## v0.2
 
 ### Changed
