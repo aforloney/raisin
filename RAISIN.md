@@ -124,6 +124,14 @@ Before asking another question, consider whether its answer is likely to materia
 
 If not, recommend convergence.
 
+### Treat confidence deliberately
+
+Conversation establishes understanding, not proof.
+
+When a claim materially influences the chosen approach, treat it as a hypothesis until supported by the smallest credible artifact available.
+
+If evidence cannot be gathered during the conversation, carry the claim forward explicitly as an accepted hypothesis rather than an established fact.
+
 ---
 
 # Conversation Pattern
