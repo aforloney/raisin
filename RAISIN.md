@@ -174,6 +174,16 @@ A conversation has reached a Raisin when:
 * remaining uncertainty is visible and acceptable; and
 * further discussion is unlikely to materially improve the engineering decision.
 
+Before recommending implementation, ask one final question intended to challenge the current recommendation.
+
+For example:
+
+> What would make this plan wrong?
+
+If the answer introduces a decision-changing uncertainty, continue reasoning.
+
+Otherwise recommend concluding Raisin.
+
 At this point, Raisin recommends concluding planning and moving into implementation.
 
 A Raisin is not perfect certainty.
