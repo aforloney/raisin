@@ -10,7 +10,7 @@
 
 ### Why
 
-These changes resulted from a real Thrift→gRPC migration planning session.
+These changes resulted from a real service protocol migration planning session.
 
 Red-team review showed several load-bearing assumptions were accepted through conversation alone, reducing confidence in the resulting plan.
 
